@@ -1,0 +1,30 @@
+@mixin flex(
+  $justify-content: flex-start, 
+  $align-items: stretch, 
+  $direction: row
+){
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $direction;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == xxxs {
+    @media (max-width: 375px) { @content; }
+  } @else if $breakpoint == xxs {
+    @media (max-width: 470px) { @content; }
+  } @else if $breakpoint == sm {
+    @media (max-width: 610px) { @content; }
+  } @else if $breakpoint == bp85 {
+    @media (max-width: 850px) { @content; }
+  } @else if $breakpoint == md {
+    @media (max-width: 991px) { @content; }
+  } @else if $breakpoint == lg {
+    @media (max-width: 1024px) { @content; }
+  } @else if $breakpoint == xl {
+    @media (max-width: 1280px) { @content; }
+  } @else if $breakpoint == xxl {
+    @media (max-width: 1536px) { @content; }
+  }
+}

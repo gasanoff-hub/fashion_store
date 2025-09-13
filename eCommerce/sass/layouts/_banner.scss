@@ -1,0 +1,268 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins" as a;
+
+.banner {
+  @include a.flex(space-between, center);
+  background: var(--color-neutral-800);
+  gap: 3rem;
+  height: 65rem;
+  padding: var(--space-8);
+
+  &__gallery {
+    @include a.flex();
+    gap: 2rem;
+    height: 100%;
+    max-height: 50rem;
+  }
+
+  &__img {
+    width: 25rem;
+    height: 41rem;
+    border-radius: 5rem;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+
+    &--left,
+    &--right {
+      transform: translateY(5rem);
+    }
+
+    &--center {
+      transform: translateY(-5rem);
+    }
+  }
+
+  &__headline {
+    color: var(--color-neutral-300);
+    font-size: var(--font-size-4xl);
+    margin: 6rem 0;
+  }
+
+  &__subtitle,
+  &__brand {
+    color: var(--color-neutral-300);
+    font-size: var(--font-size-xl);
+    font-family: var(--font-secondary);
+  }
+
+  &__brand {
+    letter-spacing: 0.5rem;
+  }
+
+  @include a.respond(xxl) {
+    height: 50rem;
+    padding: var(--space-6);
+    gap: 2rem;
+
+    &__img {
+      width: 17rem;
+      height: 36rem;
+
+      &--center {
+        transform: none;
+      }
+    }
+
+    &__subtitle,
+    &__brand {
+      font-size: var(--font-size-xl);
+    }
+
+    &__headline {
+      font-size: var(--font-size-3xl);
+      margin: 2rem 0;
+    }
+
+    &__gallery {
+      gap: 2rem;
+    }
+  }
+
+  @include a.respond(xl) {
+    height: 40rem;
+    padding: var(--space-4) var(--space-3);
+    gap: 2rem;
+
+    &__img {
+      width: 14rem;
+      height: 27rem;
+
+      &--center {
+        transform: none;
+      }
+    }
+
+    &__subtitle,
+    &__brand {
+      font-size: var(--font-size-lg);
+    }
+
+    &__headline {
+      font-size: var(--font-size-3xl);
+      margin: 2rem 0;
+    }
+
+    &__gallery {
+      gap: 2rem;
+    }
+  }
+
+  @include a.respond(md) {
+    height: 36rem;
+    padding: var(--space-4) var(--space-3);
+    gap: 2rem;
+
+    &__img {
+      width: 12rem;
+      height: 22rem;
+
+      &--center {
+        transform: none;
+      }
+    }
+
+    &__subtitle,
+    &__brand {
+      font-size: var(--font-size-lg);
+    }
+
+    &__headline {
+      font-size: var(--font-size-2xl);
+      margin: 2rem 0;
+    }
+
+    &__gallery {
+      gap: 2rem;
+    }
+
+  }
+
+  @include a.respond(bp85) {
+    height: 29rem;
+    padding: var(--space-4) var(--space-3);
+    gap: 2rem;
+
+    &__img {
+      width: 9rem;
+      height: 19rem;
+
+      &--center {
+        transform: none;
+      }
+    }
+
+    &__subtitle,
+    &__brand {
+      font-size: var(--font-size-xs);
+    }
+
+    &__headline {
+      font-size: var(--font-size-xl);
+      margin: 2rem 0;
+    }
+
+    &__gallery {
+      gap: 2rem;
+    }
+  }
+
+  @include a.respond(sm) {
+    height: 25rem;
+    padding: var(--space-4) var(--space-2);
+
+    &__img {
+      width: 7rem;
+      height: 14rem;
+    }
+
+    &__headline {
+      font-size: var(--font-size-lg);
+    }
+
+    &__gallery {
+      gap: 1rem;
+    }
+  }
+
+  @include a.respond(xxs) {
+    &__img {
+      width: 5rem;
+    }
+  }
+
+  @include a.respond(xxxs) {
+    height: 19rem;
+    gap: 1rem;
+
+    &__img {
+      width: 5rem;
+      height: 10rem;
+    }
+
+    &__subtitle,
+    &__brand {
+      font-size: 0.7rem;
+    }
+
+    &__headline {
+      font-size: 1rem;
+    }
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.banner__headline,
+.banner__subtitle,
+.banner__brand,
+.banner__content .btn-special-3 {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+.banner__brand {
+  animation-delay: 0.2s;
+}
+.banner__headline {
+  animation-delay: 0.4s;
+}
+.banner__subtitle {
+  animation-delay: 0.6s;
+}
+.banner__content .btn-special-3 {
+  animation-delay: 1s;
+}
+
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.banner__img {
+  opacity: 0;
+  animation: fadeImg 1.2s ease forwards;
+}
+
+.banner__img--left {
+  animation-delay: 1.2s;
+}
+.banner__img--center {
+  animation-delay: 1.4s;
+}
+.banner__img--right {
+  animation-delay: 1.6s;
+}

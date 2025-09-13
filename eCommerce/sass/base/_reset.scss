@@ -1,0 +1,61 @@
+@use '../abstracts/variables';
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-weight: 500;
+}
+
+body {
+    background: var(--background-color);
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight-medium);
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+button, input {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    font-family: var(--font-primary);
+}
+
+.hidden {
+    display: none;
+}
+
+// color
+.red {
+    background: red;
+}
+.brown {
+    background: brown;
+}
+
+.black {
+    background: black;
+}

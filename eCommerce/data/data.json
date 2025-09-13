@@ -1,0 +1,597 @@
+{
+  "women": {
+    "clothing": [
+      {
+        "id": 1,
+        "title": "Savile Crop Blazer",
+        "image": [
+          "../img/women/clothing/card-1/1.webp",
+          "../img/women/clothing/card-1/2.webp",
+          "../img/women/clothing/card-1/3.webp",
+          "../img/women/clothing/card-1/4.webp",
+          "../img/women/clothing/card-1/5.webp",
+          "../img/women/clothing/card-1/6.webp",
+          "../img/women/clothing/card-1/7.webp"
+        ],
+        "price": "54.00",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 2,
+        "title": "Premium Wool V-neck Knitted Sweater",
+        "image": [
+          "../img/women/clothing/card-2/1.webp",
+          "../img/women/clothing/card-2/2.webp",
+          "../img/women/clothing/card-2/3.webp"
+        ],
+        "price": "64.00",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 3,
+        "title": "Premium Striped Wool Vest",
+        "image": [
+          "../img/women/clothing/card-3/1.webp",
+          "../img/women/clothing/card-3/2.webp",
+          "../img/women/clothing/card-3/3.webp"
+        ],
+        "price": "84.00",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 4,
+        "title": "Lady Luxe Oversized Blazer",
+        "image": [
+          "../img/women/clothing/card-4/1.webp",
+          "../img/women/clothing/card-4/2.webp",
+          "../img/women/clothing/card-4/3.webp",
+          "../img/women/clothing/card-4/4.webp"
+        ],
+        "price": "81.00",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 5,
+        "title": "The Noir Coat",
+        "image": [
+          "../img/women/clothing/card-5/1.webp",
+          "../img/women/clothing/card-5/2.webp"
+        ],
+        "price": "119.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 6,
+        "title": "The Coastal Stripe Sweater",
+        "image": ["../img/women/clothing/card-6/1.webp"],
+        "price": "49.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 7,
+        "title": "Palais Trousers",
+        "image": [
+          "../img/women/clothing/card-7/1.webp",
+          "../img/women/clothing/card-7/2.webp",
+          "../img/women/clothing/card-7/3.webp"
+        ],
+        "price": "89.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 8,
+        "title": "Classy Lady Set",
+        "image": [
+          "../img/women/clothing/card-8/1.webp",
+          "../img/women/clothing/card-8/2.webp",
+          "../img/women/clothing/card-8/3.webp",
+          "../img/women/clothing/card-8/4.webp",
+          "../img/women/clothing/card-8/5.webp"
+        ],
+        "price": "54.99",
+        "color": ["black", "red", "brown"]
+      }
+    ],
+    "bags": [
+      {
+        "id": 9,
+        "title": "Classy Lady Handbag",
+        "image": [
+          "../img/women/bags/card-1/1.webp",
+          "../img/women/bags/card-1/2.webp",
+          "../img/women/bags/card-1/3.webp",
+          "../img/women/bags/card-1/4.webp"
+        ],
+        "price": "124.00",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 10,
+        "title": "St Tropez Shoulderbag",
+        "image": [
+          "../img/women/bags/card-2/1.webp",
+          "../img/women/bags/card-2/2.webp"
+        ],
+        "price": "54.00",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 11,
+        "title": "The Paris Handbag",
+        "image": [
+          "../img/women/bags/card-3/1.webp",
+          "../img/women/bags/card-3/2.webp",
+          "../img/women/bags/card-3/3.webp",
+          "../img/women/bags/card-3/4.webp",
+          "../img/women/bags/card-3/5.webp"
+        ],
+        "price": "84.00",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 12,
+        "title": "The London Handbag",
+        "image": [
+          "../img/women/bags/card-4/1.webp",
+          "../img/women/bags/card-4/2.webp",
+          "../img/women/bags/card-4/3.webp"
+        ],
+        "price": "94.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 13,
+        "title": "The Ibiza Handbag",
+        "image": [
+          "../img/women/bags/card-5/1.webp",
+          "../img/women/bags/card-5/2.webp",
+          "../img/women/bags/card-5/3.webp"
+        ],
+        "price": "139.99",
+        "color": ["black", "red", "brown"]
+      }
+    ],
+    "accessories": [
+      {
+        "id": 14,
+        "title": "Emerald Sunglasses",
+        "image": [
+          "../img/women/accessories/card-1/1.webp",
+          "../img/women/accessories/card-1/2.webp"
+        ],
+        "price": "67.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 15,
+        "title": "Milano Lady Watch",
+        "image": [
+          "../img/women/accessories/card-2/1.webp",
+          "../img/women/accessories/card-2/2.webp",
+          "../img/women/accessories/card-2/3.webp",
+          "../img/women/accessories/card-2/4.webp"
+        ],
+        "price": "749.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 16,
+        "title": "Old Money Chained Bracelet",
+        "image": [
+          "../img/women/accessories/card-3/1.webp",
+          "../img/women/accessories/card-3/2.webp",
+          "../img/women/accessories/card-3/3.webp",
+          "../img/women/accessories/card-3/4.webp"
+        ],
+        "price": "424.00",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 17,
+        "title": "Noir Necklace",
+        "image": [
+          "../img/women/accessories/card-4/1.webp",
+          "../img/women/accessories/card-4/2.webp"
+        ],
+        "price": "324.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 17,
+        "title": "Sylvie Oval Sunglasses",
+        "image": [
+          "../img/women/accessories/card-5/1.webp",
+          "../img/women/accessories/card-5/2.webp",
+          "../img/women/accessories/card-5/3.webp",
+          "../img/women/accessories/card-5/4.webp"
+        ],
+        "price": "79.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 19,
+        "title": "Vintage Slim Belt",
+        "image": [
+          "../img/women/accessories/card-6/1.webp",
+          "../img/women/accessories/card-6/2.webp",
+          "../img/women/accessories/card-6/3.webp",
+          "../img/women/accessories/card-6/4.webp"
+        ],
+        "price": "59.99",
+        "color": ["black", "red", "brown"]
+      }
+    ],
+    "shoes": [
+      {
+        "id": 20,
+        "title": "Old Money Suede Lady Loafers",
+        "image": [
+          "../img/women/shoes/card-1/1.webp",
+          "../img/women/shoes/card-1/2.webp",
+          "../img/women/shoes/card-1/3.webp",
+          "../img/women/shoes/card-1/4.webp",
+          "../img/women/shoes/card-1/5.webp",
+          "../img/women/shoes/card-1/6.webp"
+        ],
+        "price": "125.00",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 21,
+        "title": "Old Money Leather Loafers",
+        "image": [
+          "../img/women/shoes/card-2/1.webp",
+          "../img/women/shoes/card-2/2.webp",
+          "../img/women/shoes/card-2/3.webp"
+        ],
+        "price": "89.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 22,
+        "title": "Gia Heels",
+        "image": [
+          "../img/women/shoes/card-3/1.webp",
+          "../img/women/shoes/card-3/2.webp",
+          "../img/women/shoes/card-3/3.webp",
+          "../img/women/shoes/card-3/4.webp",
+          "../img/women/shoes/card-3/5.webp",
+          "../img/women/shoes/card-3/6.webp"
+        ],
+        "price": "76.00",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 23,
+        "title": "Duchess Loafers Suede",
+        "image": [
+          "../img/women/shoes/card-4/1.webp",
+          "../img/women/shoes/card-4/2.webp",
+          "../img/women/shoes/card-4/3.webp",
+          "../img/women/shoes/card-4/4.webp"
+        ],
+        "price": "94.99",
+        "color": ["black", "red", "brown"]
+      }
+    ]
+  },
+  "men": {
+    "clothing": [
+      {
+        "id": 24,
+        "title": "The Mandarin Mark",
+        "image": [
+          "../img/men/clothing/card-1/1.webp",
+          "../img/men/clothing/card-1/2.webp",
+          "../img/men/clothing/card-1/3.webp",
+          "../img/men/clothing/card-1/4.webp",
+          "../img/men/clothing/card-1/5.webp"
+        ],
+        "price": "64.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 25,
+        "title": "Premium Ribbed Polo",
+        "image": [
+          "../img/men/clothing/card-2/1.webp",
+          "../img/men/clothing/card-2/2.webp",
+          "../img/men/clothing/card-2/3.webp",
+          "../img/men/clothing/card-2/4.webp",
+          "../img/men/clothing/card-2/5.webp",
+          "../img/men/clothing/card-2/6.webp"
+        ],
+        "price": "72.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 26,
+        "title": "Prestigio Silk Polo (Anti-Wrinkle)",
+        "image": [
+          "../img/men/clothing/card-3/1.webp",
+          "../img/men/clothing/card-3/2.webp",
+          "../img/men/clothing/card-3/3.webp",
+          "../img/men/clothing/card-3/4.webp",
+          "../img/men/clothing/card-3/5.webp"
+        ],
+        "price": "64.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 27,
+        "title": "Ashford Knit Polo",
+        "image": [
+          "../img/men/clothing/card-4/1.webp",
+          "../img/men/clothing/card-4/2.webp"
+        ],
+        "price": "44.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 28,
+        "title": "The Como Polo",
+        "image": [
+          "../img/men/clothing/card-5/1.webp",
+          "../img/men/clothing/card-5/2.webp",
+          "../img/men/clothing/card-5/3.webp",
+          "../img/men/clothing/card-5/4.webp",
+          "../img/men/clothing/card-5/5.webp"
+        ],
+        "price": "74.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 29,
+        "title": "Zanzibar - Linen Pantalon",
+        "image": [
+          "../img/men/clothing/card-6/1.webp",
+          "../img/men/clothing/card-6/2.webp",
+          "../img/men/clothing/card-6/3.webp",
+          "../img/men/clothing/card-6/4.webp",
+          "../img/men/clothing/card-6/5.webp",
+          "../img/men/clothing/card-6/6.webp"
+        ],
+        "price": "59.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 30,
+        "title": "Old Money Linen Combo (Shorts)",
+        "image": [
+          "../img/men/clothing/card-7/1.webp",
+          "../img/men/clothing/card-7/2.webp",
+          "../img/men/clothing/card-7/3.webp",
+          "../img/men/clothing/card-7/4.webp",
+          "../img/men/clothing/card-7/5.webp",
+          "../img/men/clothing/card-7/6.webp",
+          "../img/men/clothing/card-7/7.webp"
+        ],
+        "price": "89.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 31,
+        "title": "Paris Wide Fit Pantalon",
+        "image": [
+          "../img/men/clothing/card-8/1.webp",
+          "../img/men/clothing/card-8/2.webp",
+          "../img/men/clothing/card-8/3.webp",
+          "../img/men/clothing/card-8/4.webp",
+          "../img/men/clothing/card-8/5.webp",
+          "../img/men/clothing/card-8/6.webp"
+        ],
+        "price": "59.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 32,
+        "title": "Bari Sailor Polo",
+        "image": [
+          "../img/men/clothing/card-9/1.webp",
+          "../img/men/clothing/card-9/2.webp",
+          "../img/men/clothing/card-9/3.webp",
+          "../img/men/clothing/card-9/4.webp"
+        ],
+        "price": "72.99",
+        "color": ["black", "red", "brown"]
+      }
+    ],
+    "shoes": [
+      {
+        "id": 33,
+        "title": "Luxury Suede Loafers",
+        "image": [
+          "../img/men/shoes/card-1/1.webp",
+          "../img/men/shoes/card-1/2.webp",
+          "../img/men/shoes/card-1/3.webp"
+        ],
+        "price": "84.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 34,
+        "title": "Premium Suede City Shoes",
+        "image": [
+          "../img/men/shoes/card-2/1.webp",
+          "../img/men/shoes/card-2/2.webp",
+          "../img/men/shoes/card-2/3.webp",
+          "../img/men/shoes/card-2/4.webp",
+          "../img/men/shoes/card-2/5.webp",
+          "../img/men/shoes/card-2/6.webp"
+        ],
+        "price": "92.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 35,
+        "title": "Old Money Leather Loafers",
+        "image": [
+          "../img/men/shoes/card-3/1.webp",
+          "../img/men/shoes/card-3/2.webp",
+          "../img/men/shoes/card-3/3.webp"
+        ],
+        "price": "79.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 36,
+        "title": "Old Money Suede Penny Loafers",
+        "image": [
+          "../img/men/shoes/card-4/1.webp",
+          "../img/men/shoes/card-4/2.webp",
+          "../img/men/shoes/card-4/3.webp",
+          "../img/men/shoes/card-4/4.webp"
+        ],
+        "price": "69.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 37,
+        "title": "Old Money Suede Clogs",
+        "image": [
+          "../img/men/shoes/card-5/1.webp",
+          "../img/men/shoes/card-5/2.webp",
+          "../img/men/shoes/card-5/3.webp",
+          "../img/men/shoes/card-5/4.webp",
+          "../img/men/shoes/card-5/5.webp",
+          "../img/men/shoes/card-5/6.webp",
+          "../img/men/shoes/card-5/7.webp"
+        ],
+        "price": "99.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 38,
+        "title": "Old Money High Suede Loafers",
+        "image": [
+          "../img/men/shoes/card-6/1.webp",
+          "../img/men/shoes/card-6/2.webp",
+          "../img/men/shoes/card-6/3.webp",
+          "../img/men/shoes/card-6/4.webp",
+          "../img/men/shoes/card-6/5.webp",
+          "../img/men/shoes/card-6/6.webp"
+        ],
+        "price": "87.99",
+        "color": ["black", "red", "brown"]
+      }
+    ],
+    "watch": [
+      {
+        "id": 39,
+        "title": "Lugano Classic Watch (Waterproof)",
+        "image": [
+          "../img/men/watch/card-1/1.webp",
+          "../img/men/watch/card-1/2.webp",
+          "../img/men/watch/card-1/3.webp"
+        ],
+        "price": "119.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 40,
+        "title": "Lisbon Leather Watch",
+        "image": [
+          "../img/men/watch/card-2/1.webp",
+          "../img/men/watch/card-2/2.webp",
+          "../img/men/watch/card-2/3.webp",
+          "../img/men/watch/card-2/4.webp"
+        ],
+        "price": "135.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 41,
+        "title": "Marine Quartz Watch",
+        "image": [
+          "../img/men/watch/card-3/1.webp",
+          "../img/men/watch/card-3/2.webp",
+          "../img/men/watch/card-3/3.webp",
+          "../img/men/watch/card-3/4.webp"
+        ],
+        "price": "99.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 42,
+        "title": "Athens Chronograph Watch",
+        "image": [
+          "../img/men/watch/card-4/1.webp",
+          "../img/men/watch/card-4/2.webp"
+        ],
+        "price": "159.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 43,
+        "title": "Geneva Classic Watch (Waterproof)",
+        "image": [
+          "../img/men/watch/card-5/1.webp",
+          "../img/men/watch/card-5/2.webp",
+          "../img/men/watch/card-5/3.webp",
+          "../img/men/watch/card-5/4.webp"
+        ],
+        "price": "369.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 44,
+        "title": "Stainless Steel Watch (Waterproof)",
+        "image": [
+          "../img/men/watch/card-6/1.webp",
+          "../img/men/watch/card-6/2.webp",
+          "../img/men/watch/card-6/3.webp"
+        ],
+        "price": "249.99",
+        "color": ["black", "red", "brown"]
+      }
+    ],
+    "accessories": [
+      {
+        "id": 45,
+        "title": "Medusa Long Chain (Gold & Silver)",
+        "image": [
+          "../img/men/accessories/card-1/1.webp",
+          "../img/men/accessories/card-1/2.webp",
+          "../img/men/accessories/card-1/3.webp"
+        ],
+        "price": "35.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 46,
+        "title": "Axis Tag Pendant",
+        "image": [
+          "../img/men/accessories/card-2/1.webp",
+          "../img/men/accessories/card-2/2.webp",
+          "../img/men/accessories/card-2/3.webp"
+        ],
+        "price": "29.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 47,
+        "title": "Zodiac Sign Necklace - Gold",
+        "image": [
+          "../img/men/accessories/card-3/1.webp",
+          "../img/men/accessories/card-3/2.webp",
+          "../img/men/accessories/card-3/3.webp",
+          "../img/men/accessories/card-3/4.webp",
+          "../img/men/accessories/card-3/5.webp"
+        ],
+        "price": "79.99",
+        "color": ["black", "red", "brown"]
+      },
+      {
+        "id": 48,
+        "title": "Obsidian Band",
+        "image": [
+          "../img/men/accessories/card-4/1.webp",
+          "../img/men/accessories/card-4/2.webp",
+          "../img/men/accessories/card-4/3.webp"
+        ],
+        "price": "47.99",
+        "color": ["black", "red", "brown"]
+      }
+    ]
+  }
+}

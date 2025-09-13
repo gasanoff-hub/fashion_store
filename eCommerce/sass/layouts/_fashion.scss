@@ -1,0 +1,314 @@
+@use "../abstracts/mixins" as a;
+
+.fashion {
+  &-section__title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-regular);
+    padding: var(--space-6) 0;
+    text-align: center;
+  }
+
+  &-category__title {
+    font-size: var(--font-size-xl);
+    font-family: var(--font-secondary);
+    padding: var(--space-4) 0;
+  }
+
+  &-slider {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 0 0 8rem;
+  }
+
+  &-slide {
+    position: relative;
+    background: var(--color-neutral-300);
+    border: 1px solid var(--color-neutral-400);
+    border-radius: 1rem;
+    overflow: hidden;
+
+    &__info {
+      @include a.flex($direction: column);
+      gap: 0.5rem;
+      padding: var(--space-2);
+      height: 6.7rem;
+      background: var(--color-neutral-900);
+    }
+
+    &__title,
+    &__price {
+      font-size: var(--font-size-base);
+      color: var(--color-neutral-100);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 90%;
+    }
+
+    &__img {
+      width: 100%;
+      display: block;
+      height: 33rem;
+      object-fit: contain;
+      cursor: pointer;
+    }
+
+    &__color {
+      @include a.flex($direction: column);
+      gap: 0.5rem;
+      position: absolute;
+      bottom: 6.7rem;
+      left: 0;
+      right: 0;
+      height: 5.7rem;
+      background: rgba(200, 200, 200, 0.3);
+      padding: var(--space-2);
+      display: none;
+    }
+  }
+
+  .fashion-slide:hover .fashion-slide__color {
+    display: flex;
+  }
+
+  &-icon__heart {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--color-neutral-600);
+
+    &.active {
+      color: red;
+    }
+  }
+
+  &-icon__add {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 10;
+    color: var(--color-neutral-100);
+  }
+
+  &-color__name {
+    font-size: var(--font-size-base);
+  }
+
+  @include a.respond(xxl) {
+    &-slide {
+      &__img {
+        height: 26rem;
+        object-fit: contain;
+      }
+    }
+
+    &-section {
+      &__title {
+        font-size: var(--font-size-xl);
+      }
+    }
+
+    &-category__title {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  @include a.respond(xl) {
+    &-slide {
+      &__img {
+        height: 21rem;
+        object-fit: contain;
+      }
+    }
+
+    &-section {
+      &__title {
+        font-size: var(--font-size-xl);
+      }
+    }
+
+    &-category__title {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  @include a.respond(md) {
+    &-slide {
+      &__img {
+        height: 19rem;
+        object-fit: contain;
+      }
+    }
+
+    &-section {
+      &__title {
+        font-size: var(--font-size-xl);
+      }
+    }
+
+    &-category__title {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  @include a.respond(bp85) {
+    &-slider {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin: 0 0 var(--space-6);
+    }
+
+    &-slide {
+      &__img {
+        height: 20rem;
+        object-fit: contain;
+      }
+
+      &__info {
+        justify-content: center;
+        height: 5.7rem;
+      }
+
+      &__title,
+      &__price {
+        font-size: var(--font-size-sm);
+      }
+
+      &__color {
+        bottom: 5.7rem;
+        height: 4.7rem;
+        gap: 0.1rem;
+      }
+    }
+
+    &-section__title {
+      font-size: var(--font-size-xl);
+      padding: var(--space-4) 0;
+    }
+
+    &-category__title {
+      font-size: var(--font-size-lg);
+    }
+
+    .dot {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+
+  @include a.respond(sm) {
+    &-slider {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-slide {
+      &__img {
+        height: 20rem;
+        object-fit: contain;
+      }
+   
+      &__color {
+        bottom: 5.7rem;
+        height: 4rem;
+        padding: var(--space-2);
+        gap: 0.1rem;
+      }
+
+      &__title,
+      &__price {
+        font-size: var(--font-size-sm);
+        color: var(--color-neutral-100);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+
+    &-section__title {
+      font-size: var(--font-size-xl);
+    }
+
+    &-category__title {
+      font-size: var(--font-size-lg);
+    }
+
+    &-color__name {
+      font-size: var(--font-size-xs);
+    }
+
+    .dot {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  @include a.respond(xxs) {
+    &-slide {
+      &__img {
+        height: 17rem;
+        object-fit: contain;
+      }
+
+      &__info {
+        height: auto;
+      }
+
+      &__title,
+      &__price {
+        font-size: var(--font-size-xs);
+      }
+    }
+
+    &-slider {
+      margin: 0 0 var(--space-6);
+    }
+
+    &-section__title {
+      font-size: var(--font-size-lg);
+      padding: var(--space-4) 0;
+    }
+
+    &-category__title {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  @include a.respond(xxxs) {
+    &-slide {
+      &__img {
+        height: 14rem;
+      }
+
+      &__color {
+        bottom: 5.7rem;
+        height: 3rem;
+        padding: 0 var(--space-2);
+        gap: 0;
+      }
+    }
+
+    &-color__name {
+      font-size: var(--font-size-xs);
+    }
+
+    .dot {
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  }
+}
+
+.dot-pattern {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.dot {
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 1px solid var(--color-neutral-600);
+  border-radius: 50%;
+  cursor: pointer;
+}

@@ -1,0 +1,31 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins" as a;
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+
+  &-burger {
+    font-size: 3rem;
+  }
+
+  &-arrow {
+    font-size: 3rem;
+  }
+
+  @include a.respond(xxl) {
+    font-size: 2.5rem;
+
+    &-add, &-heart {
+      font-size: var(--font-size-xl);
+    }
+  }
+
+  @include a.respond(xxxs) {
+    font-size: 2rem;
+
+    &-add, &-heart {
+      font-size: var(--font-size-base);
+    }
+  }
+}

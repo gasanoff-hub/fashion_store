@@ -1,0 +1,41 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins" as a;
+
+.promo {
+  &-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    background: var(--color-neutral-900);
+    width: 100%;
+    z-index: 9999;
+    cursor: pointer;
+
+    &__inner {
+      text-align: center;
+    }
+  }
+
+  &-message {
+    color: var(--color-neutral-100);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    padding: var(--space-3) 0;
+  }
+
+  @include a.respond(sm) {
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-1);
+    }
+
+    &-message {
+      font-size: var(--font-size-xs);
+      padding: 0;
+    }
+  }
+}

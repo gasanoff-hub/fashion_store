@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- REMIX ICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <title>AVERTON</title>
+</head>
+<body>
+    <!-- PROMO TOP -->
+    <div class="promo-top">
+        <div class="promo-top__inner">
+            <p class="promo-message">Complimentary U.S No-Rush Shipping on orders of $30 or more. Shop now</p>
+        </div>
+    </div>
+
+    <!-- HEADER --> 
+    <header class="header">
+
+        <div class="header__inner">
+            <div class="header__mobile--menu">
+                <i class="icon icon-burger ri-menu-2-fill"></i>
+            </div>
+            <!-- HEADER LOGO --> 
+            <a href="/index.html" class="header__logo">AVERTON</a>
+
+            <!-- HEADER NAV --> 
+            <nav class="header__nav">
+                  <!-- BURGER MENU LOGO-->
+                  <div class="header__nav--logo">
+                     <a href="/index.html">AVERTON</a>
+                  </div>
+                  <!-- -->
+                <ul class="header__nav--list">
+                    <li class="header__nav--item">
+                        <a class="header__nav--link" href="/html/men.html">Men</a>
+                    </li>
+                    <li class="header__nav--item">
+                        <a class="header__nav--link" href="/html/women.html">Women</a>
+                    </li>
+                    <li class="header__nav--item">
+                        <a class="header__nav--link" href="/html/about.html">About</a>
+                    </li>
+                    <!-- BURGER MENU -->
+                     <li class="header__nav--item header__nav--burger">
+                        <a href="#" class="header__nav--link">Stores</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- HEADER ACTIONS --> 
+            <div class="header__actions">
+                <div class="header__actions--search">
+                    <i class="icon icon-search ri-search-line"></i>
+                </div>
+                <a href="#" class="header__actions--item store">Stores</a>
+                <a href="/html/wishlist.html" class="header__actions--item">
+                    <i class="icon icon-heart ri-heart-3-line"></i>
+                    <span class="header__actions--span">0</span>
+                </a>
+                <a href="/html/bag.html" class="header__actions--item">
+                    <i class="icon icon-shop ri-shopping-bag-fill"></i>
+                    <span class="header__actions--span cart-span">0</span>
+                </a>
+            </div>
+        </div>
+        <div class="header-search">
+            <i class="icon icon-search ri-search-line"></i>
+            <input type="text" class="header-search__input" placeholder="Search..."/>
+        </div>
+    </header>
+
+    <div id="searchResults">
+        <div class="fashion-slide-container"></div>
+    </div>
+
+    <!-- PRODUCT CART --> 
+    <section class="product container">
+        <!-- LEFT -->
+        <div class="product-gallery">
+            <div class="product-gallery__main swiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="" class="product-gallery__img" alt="Product">
+                </div>
+                <div class="swiper-slide">
+                    <img src="" class="product-gallery__img" alt="Product">
+                </div>
+                <!-- Daha çox slide -->
+                </div>
+                <!-- Optional navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <div class="product-gallery__thumbnails swiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="" class="product-gallery__thumbnail" alt="Thumbnail">
+                </div>
+                <div class="swiper-slide">
+                    <img src="" class="product-gallery__thumbnail" alt="Thumbnail">
+                </div>
+                <div class="swiper-slide">
+                    <img src="" class="product-gallery__thumbnail" alt="Thumbnail">
+                </div>
+                <div class="swiper-slide">
+                    <img src="" class="product-gallery__thumbnail" alt="Thumbnail">
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- RIGHT -->
+        <div class="product-info">
+            <h1 class="product-title"></h1>
+            <span class="product-price"></span>
+
+            <div class="product-description">
+                <span class="product-description__text">
+                    Timeless elegance meets modern comfort. Inspired by the old money aesthetic, crafted for effortless sophistication.
+                </span>
+            </div>
+            
+            <div class="product-colors">
+                <div class="product-colors__title">Color</div>
+                <div class="product-colors__list">
+                    <span class="product-colors__item product-colors__item--blue"></span>
+                    <span class="product-colors__item product-colors__item--red"></span>
+                    <span class="product-colors__item product-colors__item--pink"></span>
+                </div>
+            </div>
+
+            <div class="product-size">
+                <h3 class="product-size__title">Product Size</h3>
+                <div class="product-size__buttons">
+                    <button class="product-size__btn product-size__xs">XS</button>
+                    <button class="product-size__btn product-size__s">S</button>
+                    <button class="product-size__btn product-size__m">M</button>
+                    <button class="product-size__btn product-size__l">L</button>
+                    <button class="product-size__btn product-size__xl">XL</button>
+                </div>
+            </div>
+
+            <button class="btn btn-special-2 add-to-cart">Add to Cart</button>
+
+            <div class="product-accordion">
+                <!-- Item -->
+                <div class="product-accordion__item">
+                    <button class="product-accordion__header">
+                        Check In-Store Availability
+                        <i class="icon icon-arrow ri-arrow-drop-down-line"></i>
+                    </button>
+                    <div class="product-accordion__content">
+                        <p>Check availability of this product at your nearest store.</p>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="product-accordion__item">
+                    <button class="product-accordion__header">
+                        Fit Details
+                        <i class="icon icon-arrow ri-arrow-drop-down-line"></i>
+                    </button>
+                    <div class="product-accordion__content">
+                        <p>Regular fit, true to size. Model is 185cm wearing size M.</p>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="product-accordion__item">
+                    <button class="product-accordion__header">
+                        Fabrication & Care
+                        <i class="icon icon-arrow ri-arrow-drop-down-line"></i>
+                    </button>
+                    <div class="product-accordion__content">
+                        <p>100% cotton. Machine wash cold, tumble dry low.</p>
+                    </div>
+                </div>
+
+                <!-- Item -->
+                <div class="product-accordion__item">
+                    <button class="product-accordion__header">
+                        Shipping & Returns
+                        <i class="icon icon-arrow ri-arrow-drop-down-line"></i>
+                    </button>
+                    <div class="product-accordion__content">
+                        <p>Free shipping on orders over $50. 30-day free returns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4 class="footer-title">CONTACT US</h4>
+                <ul class="footer-menu">
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">+1 (844) 326-6000</a>
+                    </li>
+                    <li class="footer-item">Email Us</li>
+                    <li class="footer-item">Mon-Fri 9am-3pm Pt</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">CUSTOMERS</h4>
+                <ul class="footer-menu">
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Start a Return</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Return Policy</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">FAQ</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Catalogs and Mailers</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">About Group Gifting</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">COMPANY</h4>
+                <ul class="footer-menu">
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">About US</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Sustainability</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Discover Revive</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Careers</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Privace Policy</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Terms</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">Join us in living fewer, better. Every day.</h3>
+                <ul class="footer-menu">
+                    <li class="footer-item">
+                        <input type="text" class="footer-input" placeholder="Enter your email address">
+                    </li>
+                    <li class="footer-item">
+                        By signing up, you agree to our
+                        <a href="#" class="footer-legal__link">Privacy Policy</a> and
+                        <a href="#" class="footer-legal__link">Terms of Service</a>.
+                    </li>
+                    <button class="btn btn-special-2">Subscribe</button>
+                </ul>
+            </div>
+        </div>
+        <!-- FOOTER BOTTOM-->
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; 2025 AVERTON. All rights reserved.</p>
+            <div class="payment-methods">
+                <li class="payment-methods__card">
+                    <img src="/img/payment-method/visa.webp" alt="visa" class="payment-icon">
+                </li>
+                <li class="payment-methods__card">
+                    <img src="/img/payment-method/master.webp" alt="master" class="payment-icon">
+                </li>
+                <li class="payment-methods__card">
+                    <img src="/img/payment-method/apple-pay.webp" alt="apple-pay" class="payment-icon">
+                </li>
+                <li class="payment-methods__card">
+                    <img src="/img/payment-method/paypal.webp" alt="paypal" class="payment-icon">
+                </li>
+                <li class="payment-methods__card">
+                    <img src="/img/payment-method/american-express.webp" alt="american-express" class="payment-icon">
+                </li>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/swiper.js"></script>
+    <script src="/js/card.js"></script>
+    <script src="/js/header/search.js"></script>
+    <script src="/js/header/burger-menu.js"></script>
+    <script src="/js/product.js"></script>
+</body>
+</html>

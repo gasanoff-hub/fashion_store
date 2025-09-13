@@ -1,0 +1,43 @@
+@use "../abstracts/mixins" as a;
+
+.mission {
+  text-align: center;
+  padding: 5rem 0;
+
+  &__title {
+    font-size: var(--font-size-2xl);
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight-bold);
+  }
+
+  &__description {
+    font-size: var(--font-size-base);
+    margin: 1.6rem 0 0;
+  }
+
+  @include a.respond(sm) {
+    padding: var(--space-4);
+    margin: 0 0 3rem;
+
+    &__title {
+      font-size: var(--font-size-xl);
+    }
+
+    &__description {
+      font-size: var(--font-size-base);
+    }
+  }
+
+  @include a.respond(xxs) {
+    padding: var(--space-4);
+    margin: 0 0 3rem;
+
+    &__title {
+      font-size: var(--font-size-lg);
+    }
+
+    &__description {
+      font-size: var(--font-size-xs);
+    }
+  }
+}

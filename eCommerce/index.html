@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- REMIX ICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <title>AVERTON</title>
+</head>
+<body>
+    <!-- PROMO TOP -->
+    <div class="promo-top">
+        <div class="promo-top__inner">
+            <p class="promo-message">Complimentary U.S No-Rush Shipping on orders of $30 or more. Shop now</p>
+        </div>
+    </div>
+
+    <!-- HEADER --> 
+    <header class="header">
+
+        <div class="header__inner">
+            <div class="header__mobile--menu">
+                <i class="icon icon-burger ri-menu-2-fill"></i>
+            </div>
+            <!-- HEADER LOGO --> 
+            <a href="/index.html" class="header__logo">AVERTON</a>
+
+            <!-- HEADER NAV --> 
+            <nav class="header__nav">
+                  <!-- BURGER MENU LOGO-->
+                  <div class="header__nav--logo">
+                     <a href="/index.html">AVERTON</a>
+                  </div>
+                  <!-- -->
+                <ul class="header__nav--list">
+                    <li class="header__nav--item">
+                        <a class="header__nav--link" href="/html/men.html">Men</a>
+                    </li>
+                    <li class="header__nav--item">
+                        <a class="header__nav--link" href="/html/women.html">Women</a>
+                    </li>
+                    <li class="header__nav--item">
+                        <a class="header__nav--link" href="/html/about.html">About</a>
+                    </li>
+                    <!-- BURGER MENU -->
+                     <li class="header__nav--item header__nav--burger">
+                        <a href="#" class="header__nav--link">Stores</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- HEADER ACTIONS --> 
+            <div class="header__actions">
+                <div class="header__actions--search">
+                    <i class="icon icon-search ri-search-line"></i>
+                </div>
+                <a href="#" class="header__actions--item store">Stores</a>
+                <a href="/html/wishlist.html" class="header__actions--item">
+                    <i class="icon icon-heart ri-heart-3-line"></i>
+                    <span class="header__actions--span">0</span>
+                </a>
+                <a href="/html/bag.html" class="header__actions--item">
+                    <i class="icon icon-shop ri-shopping-bag-fill"></i>
+                    <span class="header__actions--span cart-span">0</span>
+                </a>
+            </div>
+        </div>
+        <div class="header-search">
+            <i class="icon icon-search ri-search-line"></i>
+            <input type="text" class="header-search__input" placeholder="Search..."/>
+        </div>
+    </header>
+
+    <div id="searchResults">
+        <div class="fashion-slide-container"></div>
+    </div>
+
+    <!-- MAIN --> 
+    <main class="main">
+        <!-- BANNER --> 
+         <section class="banner">
+            <!-- BANNER CONTENT--> 
+            <div class="banner__content">
+                <h3 class="banner__brand">AVERTON</h3>
+                <h1 class="banner__headline">OLD MONEY OUTFITS</h1>
+                <P class="banner__subtitle">
+                    CLASSIC ELEGANCE REBORN<br>
+                    TIMELESS OLD MONEY STYLE<br>
+                    LUXURY IN EVERY STITCH
+                </P>
+                <button class="btn btn-special-3">Shop Now</button>
+            </div>
+            <!-- BANNER GALLERY--> 
+            <div class="banner__gallery">
+                <img src="/img/banner/header-left.webp" alt="model" class="banner__img banner__img--left">
+                <img src="/img/banner/header-center.webp" alt="model" class="banner__img banner__img--center">
+                <img src="/img/banner/header-right.webp" alt="model" class="banner__img banner__img--right">
+            </div>
+         </section>
+
+         <!-- WOMEN --> 
+         <section class="fashion container">
+            <h2 class="fashion-section__title">Old Money Style - Women</h2>
+
+            <!-- Clothing -->
+            <div class="fashion-category">
+                <h3 class="fashion-category__title">Elegant Clothing</h3>
+                <div class="fashion-slider" id="women-clothing-slider"></div>
+            </div>
+
+            <!-- Shoes -->
+            <div class="fashion-category">
+                <h3 class="fashion-category__title">Timeless Shoes</h3>
+                <div class="fashion-slider" id="women-shoes-slider"></div>
+            </div>
+
+            <!-- Bags -->
+            <div class="fashion-category">
+                <h3 class="fashion-category__title">Classic HandBags</h3>
+                <div class="fashion-slider" id="women-bags-slider"></div>
+            </div>
+
+            <!-- Accessories -->
+            <div class="fashion-category">
+                <h3 class="fashion-category__title">Refined Accessories</h3>
+                <div class="fashion-slider" id="women-accessories-slider"></div>
+            </div>
+         </section>
+
+         <!-- MAIN BANNER --> 
+         <section class="main-banner">
+            <!-- MAIN BANNER LEFT--> 
+            <div class="main-banner__left">
+                <img src="/img/banner/main-banner-left.webp" alt="banner" class="main-banner__img">
+                <div class="main-banner__content">
+                    <h2 class="main-banner__title">Elegance That Lasts</h2>
+                    <p class="main-banner__subtitle">Graceful & Timeless - For Her</p>
+                    <a href="/html/women.html" class="btn btn-special-3">Shop Now</a>
+                </div>
+            </div>
+            <!-- MAIN BANNER RIGHT--> 
+            <div class="main-banner__right">
+                <img src="/img/banner/main.banner-right.webp" alt="banner" class="main-banner__img">
+                <div class="main-banner__content">
+                    <h2 class="main-banner__title">Luxury in Simplicity</h2>
+                    <p class="main-banner__subtitle">Classic & Refined - For Him</p>
+                    <a href="/html/men.html" class="btn btn-special-3">Shop Now</a>
+                </div>
+            </div>
+         </section>
+
+         <!-- MEN --> 
+         <section class="fashion container">
+            <h2 class="fashion-section__title">Old Money Style - Men</h2>
+
+            <!-- Clothing -->
+            <div class="fashion-category">
+                <h3 class="fashion-category__title">Elegant Clothing</h3>
+                <div class="fashion-slider" id="men-clothing-slider"></div>
+            </div>
+
+            <!-- Shoes -->
+            <div class="fashion-category">
+                <h3 class="fashion-category__title">Timeless Shoes</h3>
+                <div class="fashion-slider" id="men-shoes-slider"></div>
+            </div>
+
+            <!-- watch -->
+            <div class="fashion-category">
+                <h3 class="fashion-category__title">Classic Watches</h3>
+                <div class="fashion-slider" id="men-watch-slider"></div>
+            </div>
+
+            <!-- Accessories -->
+            <div class="fashion-category">
+                <h3 class="fashion-category__title">Refined Accessories</h3>
+                <div class="fashion-slider" id="men-accessories-slider"></div>
+            </div>
+         </section>
+
+         <!-- MISSION --> 
+         <section class="mission">
+            <h2 class="mission__title">AVERTON'S MISSION</h2>
+            <p class="mission__description">Everyone deserves to dress classy. We elevate your style with Old Money fashion, without overpaying.</p>
+         </section>
+
+         <!-- FAQ --> 
+         <section class="faq-container container">
+            <div class="faq-item">
+                <span class="faq-item__title">Do you ship overseas?</span>
+                <i class="icon icon-add faq-item__icon ri-add-line"></i>
+                <div class="faq-answer">
+                    Yes, we ship all over the world. We currently ship to 65+ countries. Shipping costs will apply, and will be added at checkout.<br>
+                    Currently Free Shipping applies on orders over 85$<br>
+                    We run discounts and promotions all year, so stay tuned for exclusive deals on shipping.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item__title">How long will it take to get my orders?</div>
+                <i class="icon icon-add faq-item__icon ri-add-line"></i>
+                <div class="faq-answer">
+                    We are currently experiencing a very high order volume, all orders will be dispatched within 24-48 hours, and shipping will take around 5-7 business days depending on your location. We ship to all countries except some Islands.<br>
+                    Delivery details will be provided during checkout & in your confirmation email.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item__title">Do you ship to my country?</div>
+                <i class="icon icon-add faq-item__icon ri-add-line"></i>
+                <div class="faq-answer">
+                    We excluded countries we can not ship to, from checking out. This means if you are able to check-out, we can ship to your country
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item__title">What are the return rules?</div>
+                <i class="icon icon-add faq-item__icon ri-add-line"></i>
+                <div class="faq-answer">
+                    You can return a product for any reason within 14-days guaranteed. No questions asked.<br>
+                    We do not charge a return or handling fee<br>
+                    The customer only have to bare the return label
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-item__title">Other questions?</div>
+                <i class="icon icon-add faq-item__icon ri-add-line"></i>
+                <div class="faq-answer">
+                    You can contact us through our contact page! We will be happy to assist you.
+                </div>
+            </div>
+         </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4 class="footer-title">CONTACT US</h4>
+                <ul class="footer-menu">
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">+1 (844) 326-6000</a>
+                    </li>
+                    <li class="footer-item">Email Us</li>
+                    <li class="footer-item">Mon-Fri 9am-3pm Pt</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">CUSTOMERS</h4>
+                <ul class="footer-menu">
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Start a Return</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Return Policy</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">FAQ</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Catalogs and Mailers</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">About Group Gifting</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">COMPANY</h4>
+                <ul class="footer-menu">
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">About US</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Sustainability</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Discover Revive</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Careers</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Privace Policy</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#" class="footer-item__link">Terms</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">Join us in living fewer, better. Every day.</h3>
+                <ul class="footer-menu">
+                    <li class="footer-item">
+                        <input type="text" class="footer-input" placeholder="Enter your email address">
+                    </li>
+                    <li class="footer-item">
+                        By signing up, you agree to our
+                        <a href="#" class="footer-legal__link">Privacy Policy</a> and
+                        <a href="#" class="footer-legal__link">Terms of Service</a>.
+                    </li>
+                    <button class="btn btn-special-2">Subscribe</button>
+                </ul>
+            </div>
+        </div>
+        <!-- FOOTER BOTTOM-->
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; 2025 AVERTON. All rights reserved.</p>
+            <div class="payment-methods">
+                <li class="payment-methods__card">
+                    <img src="/img/payment-method/visa.webp" alt="visa" class="payment-icon">
+                </li>
+                <li class="payment-methods__card">
+                    <img src="/img/payment-method/master.webp" alt="master" class="payment-icon">
+                </li>
+                <li class="payment-methods__card">
+                    <img src="/img/payment-method/apple-pay.webp" alt="apple-pay" class="payment-icon">
+                </li>
+                <li class="payment-methods__card">
+                    <img src="/img/payment-method/paypal.webp" alt="paypal" class="payment-icon">
+                </li>
+                <li class="payment-methods__card">
+                    <img src="/img/payment-method/american-express.webp" alt="american-express" class="payment-icon">
+                </li>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/js/header/burger-menu.js"></script>
+    <script src="/js/header/search.js"></script>
+    <script src="/js/card.js"></script>
+    <script src="/js/faq.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+@use "../abstracts/mixins" as a;
+@use "../abstracts/variables";
+
+.btn {
+  display: flex;
+  width: fit-content;
+  height: auto;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-lg);
+  white-space: nowrap;
+  cursor: pointer;
+
+  &-filter-1 {
+    background: var(--color-neutral-100);
+    color: var(--color-neutral-900);
+    border: 1px solid var(--color-neutral-900);
+    border-radius: var(--radius-xl);
+    padding: var(--space-1) var(--space-3);
+  }
+
+  &-filter-2 {
+    color: var(--color-neutral-300);
+    background: var(--color-neutral-900);
+    border: 1px solid var(--color-neutral-100);
+    border-radius: var(--radius-xl);
+    padding: var(--space-1) var(--space-3);
+  }
+
+  &-special-1 {
+    background: var(--color-neutral-900);
+    color: var(--color-neutral-300);
+    padding: var(--space-2) var(--space-4);
+  }
+
+  &-special-2 {
+    background: var(--color-neutral-900);
+    color: var(--color-neutral-300);
+    padding: var(--space-2);
+    transition: var(--transition-normal);
+
+    &:hover {
+      background: var(--color-neutral-800);
+    }
+  }
+
+  &-special-3 {
+    background: transparent;
+    color: var(--color-neutral-300);
+    padding: var(--space-3);
+    border: 1px solid var(--color-neutral-300);
+    transition: var(--transition-normal);
+    margin: var(--space-4) 0 0;
+
+
+    &:hover {
+      background: var(--color-neutral-200);
+      color: var(--color-neutral-900);
+      border: 1px solid transparent;
+    }
+  }
+
+  @include a.respond(bp85) {
+    font-size: var(--font-size-lg);
+    &-special-3 {
+      padding: var(--space-3);
+    }
+  }
+
+  @include a.respond(sm) {
+    font-size: var(--font-size-base);
+    &-special-3 {
+      padding: var(--space-3);
+    }
+  }
+
+  @include a.respond(xxs) {
+    font-size: var(--font-size-xs);
+    &-special-3 {
+      padding: var(--space-2);
+    }
+  }
+}
+
+// div class="btn-container">
+//         <button class="btn btn-filter-1">Lounge</button>
+//         <button class="btn btn-filter-2">Lounge</button>
+//         <button class="btn btn-special-1">See Results</button>
+//         <button class="btn btn-special-2">Add to Bag</button>
+//         <button class="btn btn-special-3">Shop Now</button>
+// </div>

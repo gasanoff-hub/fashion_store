@@ -1,0 +1,76 @@
+@use "../abstracts/mixins" as a;
+@use "../abstracts/variables";
+
+.faq {
+  &-container {
+    max-width: 80rem;
+    margin: 0 auto 8rem;
+  }
+
+  &-item {
+    margin: 0 0 var(--space-5);
+    padding: var(--space-4);
+    background-color: var(--color-neutral-300);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-neutral-500);
+    cursor: pointer;
+
+    &__title {
+      font-size: var(--font-size-lg);
+      display: inline-block;
+    }
+
+    &__icon {
+      float: right;
+      font-size: var(--font-size-xl);
+      transition: var(--transition-normal);
+    }
+  }
+
+  &-answer {
+    display: none;
+    padding: 1rem 0 0;
+    font-size: var(--font-size-base);
+    color: var(--color-neutral-700);
+  }
+
+  &-item.open .faq-answer {
+    display: block;
+  }
+
+  &-item.open .faq-item__icon {
+    transform: rotate(45deg);
+  }
+
+  @include a.respond(sm) {
+    &-item {
+      &__title {
+        font-size: var(--font-size-base);
+      }
+
+      &__icon {
+        font-size: var(--font-size-lg);
+      }
+    }
+
+    &-answer {
+      font-size: var(--font-size-sm);
+    }
+  }
+
+  @include a.respond(xxs) {
+    &-item {
+      &__title {
+        font-size: var(--font-size-xs);
+      }
+
+      &__icon {
+        font-size: var(--font-size-base);
+      }
+    }
+
+    &-answer {
+      font-size: var(--font-size-xs);
+    }
+  }
+}
